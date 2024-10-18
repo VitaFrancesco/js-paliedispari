@@ -17,7 +17,7 @@ console.log(reverseString(userWord))
 function isPalindroma (stringA) {
     if(typeof stringA !== String) {
         console.error(`${stringA} in not a string`)
-        return
+        return false
     }
     let stringB = reverseString(stringA)
     if (stringA.toLowerCase() === stringB.toLowerCase()) {
