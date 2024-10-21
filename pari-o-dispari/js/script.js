@@ -45,12 +45,8 @@ console.log(`userN ${userN}`)
 console.log(`computerN ${computerN}`)
 console.log(`result ${result}`)
 
-if (isEven(result) && userSide === "pari") {
-    alert(`Il numero ${result} è ${userSide}. Hai vinto!!`)
-} else if (isEven(result) && userSide === "dispari") {
-    alert(`Il numero ${result} è pari. Hai perso :(`)
-} else if (!(isEven(result)) && userSide === "dispari") {
+if ((isEven(result) && userSide === "pari") || (!(isEven(result)) && userSide === "dispari")) {
     alert(`Il numero ${result} è ${userSide}. Hai vinto!!`)
 } else {
-    alert(`Il numero ${result} è dispari. Hai perso :(`)
+    alert(`Il numero generato è ${result}. Hai perso :(`)
 }
